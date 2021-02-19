@@ -1,0 +1,209 @@
+.StatusCard{
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 20px 0 ;
+}
+
+.title{
+    display: flex;
+
+}
+
+.title img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.title .user-infor{
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.title .time{
+    font-size: 0.88rem;
+    color: rgb(128, 129, 129);
+}
+.title .time:hover{
+    text-decoration: underline;
+}
+.title .name:hover{
+    text-decoration: underline;
+}
+
+.title button{
+    margin-left: auto;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 50%;
+}
+
+.title button:hover{
+    background-color: rgb(219, 216, 216);
+}
+.title button:focus{
+    outline: none;
+}
+
+.content-status{
+    margin-top: 10px;
+}
+
+.interact-number{
+    margin-top: 8px;
+    display: flex;
+    
+}
+
+.interact-number .like-number span{
+    cursor: pointer;
+    position: relative;
+    top: -2px;
+    left: 4px;
+    color: rgb(128, 129, 129);
+}
+.interact-number .like-number span:hover{
+    text-decoration: underline;
+}
+
+.interact-number .comment-share--number{
+    margin-left: auto ;
+    cursor: pointer;
+    color: rgb(128, 129, 129);
+}
+.interact-number .comment-share--number span:nth-child(1):hover{
+    text-decoration: underline;
+}
+.interact-number .comment-share--number span:nth-child(2):hover{
+    text-decoration: underline;
+}
+
+.interact-number .comment-share--number span:first-child{
+    margin-right: 12px;
+}
+
+.btn-react{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+}
+
+.btn-react::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 98%;
+    height: 0.8px;
+    background: rgb(202, 202, 202);
+    margin:auto ;
+    left: 0;
+    right: 0;
+    top: -4px;
+
+}
+
+.btn-react button{
+    border: none;
+    padding: 5px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 5px;
+}
+.btn-react button:hover{
+    outline: none;
+    border: none;
+    background-color: rgb(219, 216, 216);
+}
+.btn-react button:focus{
+    outline: none;
+    border: none;
+}
+.btn-react button:active{
+    font-size: 0.95rem;
+}
+
+.is-liked{
+    color: rgb(19,204,211);
+}
+
+.comment{
+    position: relative;
+    padding-top: 10px;
+}
+.comment-content h4{
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.comment::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 98%;
+    height: 0.8px;
+    background: rgb(202, 202, 202);
+    margin:auto ;
+    left: 0;
+    right: 0;
+    top: 4px;
+}
+
+
+
+.comment form img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    top: 12px;
+}
+
+.comment input{
+    padding: 12px;
+    width: 90%;
+    margin-left: 8px;
+    height: 37px;
+    border-radius: 50px;
+    font-size: 1rem;
+    border: none;
+    background: rgb(240,242,245);
+}
+
+.comment input:focus{
+    outline: none;
+}
+
+.comment-list{
+    margin-top: 13px;
+    list-style: none;
+}
+
+.comment-user{
+    display: flex;
+    margin-top: 10px;
+}
+
+.comment-user img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+   
+}
+
+.comment-user .comment-content{
+    margin-left: 8px;
+    background: rgb(240,242,245);
+    width: 90%;
+    border-radius: 20px;
+    padding: 12px;
+    padding-top: 8px;
+}

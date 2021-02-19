@@ -1,0 +1,163 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    -webkit-transition-delay: 9999s;
+}
+
+.background-form__login{
+  background-image: url('https://wallpapercave.com/wp/wp5907788.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding: 16px;
+  position: absolute;
+}
+
+.form{
+    width: 32%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 30px 54px;
+    padding-bottom: 80px;
+    color: white;
+}
+
+.title-form{
+    font-size: 30px;
+    margin: auto;
+    text-align: center;
+    margin: 0 0 16px 0;
+    color: rgb(16,134,46);
+}
+
+.user-img img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 16px;
+    cursor: pointer;
+
+}
+
+.form-control{
+    background: none;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border: none;
+    border-bottom: rgb(114,191,0) solid 1.5px;
+    width: 100%;
+    color: white;
+    outline: none;
+}
+
+.form-control:focus{
+    outline: none;
+}
+.form-control::placeholder{
+    color: white;
+}
+
+.form-control.invalid{
+  border-bottom: rgb(250, 89, 89) solid 1.5px;
+}
+
+.form-message{
+  color: rgb(250, 89, 89);
+}
+
+#checkbox-remember{
+    cursor: pointer;
+}
+
+.submit{
+    padding: 8px;
+    width: 100%;
+    margin-top: 16px;
+    font-size: 18px;
+    background-color: transparent;
+    color: white;
+    border: solid rgb(16,134,46) 1.5px;
+    cursor: pointer;
+}
+.submit:focus{
+    outline: none;
+}
+.submit:active{
+    transform: scale(0.98);
+}
+
+
+/* style check box */
+
+/* The checkbox-remember */
+.checkbox-remember {
+    position: relative;
+    padding-left: 24px;
+    cursor: pointer;
+    font-size: 14px;
+    user-select: none;
+    text-align: left;
+    margin: 10px 0;
+    display: inline-block;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .checkbox-remember input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .checkbox-remember:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .checkbox-remember input:checked ~ .checkmark {
+    background-color: rgb(16,134,46);
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkbox-remember input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkbox-remember .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

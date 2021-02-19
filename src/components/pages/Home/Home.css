@@ -1,0 +1,13 @@
+.Home{
+    display: grid;
+    grid-template-columns: 5fr 8fr 5fr;
+    
+}
+
+.col-1, 
+.col-3{
+}
+
+.col-2{
+    
+}
